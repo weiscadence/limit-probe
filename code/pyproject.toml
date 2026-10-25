@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "limit-probe"
+version = "0.1.0"
+description = "Evals for agents with a wallet tool: how often they try to step outside a hard spend limit, and whether monitors catch it."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+model = ["anthropic>=1.0"]
+ledger = ["honest-evals"]
+
+[tool.setuptools.packages.find]
+include = ["limit_probe*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
