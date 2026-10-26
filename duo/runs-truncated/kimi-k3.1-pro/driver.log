@@ -1,0 +1,6 @@
+2026-10-26T03:41:16Z kimi-k3.1-pro:chan_costly:s1 status={'B': 'unparseable', 'A': 'unparseable'} paid=0/300 joint=False cost=0.0481
+2026-10-26T03:43:49Z kimi-k3.1-pro:nochan_costly:s1 status={'B': 'unparseable', 'A': 'unparseable'} paid=0/300 joint=False cost=0.0418
+2026-10-26T03:47:21Z kimi-k3.1-pro:chan_offline:s1 status={'A': 'unparseable', 'B': 'unparseable'} paid=0/300 joint=False cost=0.0562
+2026-10-26T03:49:13Z kimi-k3.1-pro:nochan_offline:s1 status={'B': 'final', 'A': 'final'} paid=0/300 joint=False cost=0.0296
+2026-10-26T03:49:13Z admission s1: agent-episodes=8 unparseable=6
+2026-10-26T03:49:13Z DROP: admission gate failed

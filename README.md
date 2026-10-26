@@ -18,6 +18,8 @@ Code and data for "A Monitor That Cannot Acquit" (Apart Research AI Collusion Sp
 
 See `BUNDLE-README.md` for the original bundle notes and hashes.
 
+- `duo/` - the pre-registered two-agent duo experiment (paper v2 sections 3 and 5): prereg, addenda, design reviews, driver, all episode data, DUO-RESULTS.md. See `duo/README.md`.
+
 ## Omitted
 - Per-run stderr logs (`*.log`, `*.out`, `stderr.txt`): contained local filesystem paths only.
 - The `runs/*/xfam-*-out.tgz` archives cited by hash in the paper: they include those stderr files, so they are not published here. Their sha256 values are in `crossfamily/EXCLUDED-TGZ-SHA256.txt`; the unpacked unit outputs are in `crossfamily/runs/`. Available on request.
