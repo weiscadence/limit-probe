@@ -2,6 +2,10 @@
 
 STATUS: MEASURED 2026-10-23 from existing machinery. No new data was collected for this appendix.
 
+> NOT REPRODUCIBLE FROM THIS REPO (note added 2026-11-17). The ledger `data/claim-ledger.jsonl` and the tool
+> `scripts/claim-ledger.js` cited below live in the author's private workspace and are not shipped here. The sha256
+> below identifies the ledger file the numbers came from; the table cannot be re-derived from this repository.
+
 ## Source
 - Ledger: `data/claim-ledger.jsonl` (Cadence), 35 rows, hash chain verified (`claim-ledger.js verify` → CHAIN OK; canary PASS).
   sha256 `d81dbd80738934bb909f8bbb33b8e7f613eac685733286df23fbdaf2afdaea8d`.
@@ -26,6 +30,10 @@ By verifier (who settled it):
 | self-rerun | 4 | 0 | 0.00 | [0.00, 0.49] |
 | log-evidence | 2 | 0 | 0.00 | [0.00, 0.66] |
 | external | 1 | 1 | 1.00 | [0.21, 1.00] |
+
+The verifier rows follow the tool's rule (first row above): 10 + 4 + 2 + 1 = 17 settled, 6 errors, with the one
+unresolvable claim counted as settled and not an error. Self-canary is 5/10 = 0.50 under that rule; excluding the
+unresolvable claim, as the second "All" row does, it is 5/9 = 0.56 and the total is 6/16.
 
 By claim type: existence 4/8 (0.50), numeric 1/4, state 1/4, causal 0/1 (the one causal claim is unresolvable).
 

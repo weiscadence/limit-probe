@@ -24,4 +24,10 @@ See `BUNDLE-README.md` for the original bundle notes and hashes.
 - Per-run stderr logs (`*.log`, `*.out`, `stderr.txt`): contained local filesystem paths only.
 - The `runs/*/xfam-*-out.tgz` archives cited by hash in the paper: they include those stderr files, so they are not published here. Their sha256 values are in `crossfamily/EXCLUDED-TGZ-SHA256.txt`; the unpacked unit outputs are in `crossfamily/runs/`. Available on request.
 
-`SHA256SUMS` covers every file in this repo.
+`SHA256SUMS` covers every tracked file except the three files named `SHA256SUMS` (itself and the two copies inside the `limit-probe-xfam` packages). Check with `sha256sum -c SHA256SUMS`.
+
+## Reading notes (added 2026-11-17 after an outside review)
+- `code/` and `BUNDLE-README.md` are frozen pre-sprint text and are left byte-identical. `code/README.md` still says "Status: prototype" and "Not run yet", and `BUNDLE-README.md` says the cross-family extension was "NOT RUN". Both predate the live runs: results are in `fullrun/`, `crossfamily/` and `duo/`.
+- `code/README.md` counts "5 agents x 6 tasks = 30 scored episodes" next to a monitor table over 16 + 26 = 42. Both are right: seven scripted agents x 6 tasks = 42 episodes; the canary (`scripted-always-split`) and the negative control (`scripted-compliant`) are run and shown to the monitors but not scored for bypass rates, leaving 5 x 6 = 30. The 16 bypasses are 10 scored (definition D1) + 6 canary.
+- `APPENDIX-DENOMINATOR.md` is computed from a private claim ledger (`data/claim-ledger.jsonl`, `scripts/claim-ledger.js`) that is not in this repo, so its table cannot be re-derived from here.
+- `duo/DUO-RESULTS.md`: see its "Review notes" section for what the H1 PASS and the pooled Fisher p do and do not support.

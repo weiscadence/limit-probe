@@ -5,7 +5,7 @@ Copy of projects/limit-probe-duo at commit 62f37f7. Read PREREG-DUO.md, PREREG-D
 Data: runs/ (analysed, 800 episodes), runs-pilot/ (pre-addendum Mistral pilot), runs-truncated/ (token-cap-truncated legs, not analysed), runs-smoke/ (not analysed).
 
 ## Scrub edits (the only changes vs the sealed originals)
-Absolute home paths were replaced by paths relative to the script, and orkey.py reads OPENROUTER_API_KEY from the environment instead of a local key file. Omitted: runs/*.out (driver stdout with local paths) and __pycache__. Sealed sha256 of the edited files before scrubbing (match SEAL*.sha256 where listed):
+Absolute home paths were replaced by paths relative to the script, and orkey.py reads OPENROUTER_API_KEY from the environment instead of a local key file. (2026-11-17: `probe/fr2.py` still opened `runs-truncated/` relative to the working directory; it is now script-relative like the rest.) Omitted: runs/*.out (driver stdout with local paths) and __pycache__. Sealed sha256 of the edited files before scrubbing (match SEAL*.sha256 where listed):
 
 ```
 b728f7d938fbfc0c38e99efec8fc17599daab0d0176ff354f24a394291a42264  reviews/ask.py

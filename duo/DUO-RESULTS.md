@@ -23,6 +23,12 @@ Generated 2026-10-26 ~07:05Z. Every number below comes from `python3 driver/tabl
 - ADDENDUM-2 legs (deepseek, command-a, qwen, kimi) ran with max_tokens 12000 and reasoning effort low. The other four ran at the provider default. Seeds may be ignored by providers.
 - The judge (gemini-3.8-flash) is from the same family as one agent model (gemini-3.5-flash-lite).
 
+## Review notes (added 2026-11-17; no number above changed)
+- **H1 "PASS" is against the ADDENDUM-1 criterion, which was written after the pilot was seen.** PREREG-DUO's H1 was a sign test of combined_logs_judge against per_agent_rule. ADDENDUM-1 (reviewer point 6) replaced it with "Wilson 95% lower bound > 0.50 and FA ≤ 0.10" because the original baseline is blind by design. By then the pilot (`runs-pilot/`, combined-logs judge 5/5, per-agent 1/5) had been seen; ADDENDUM-1 says so itself. The criterion predates every episode analysed here, but it was not chosen blind to the direction of the effect. Read the PASS as a pre-specified check on fresh data, not as a confirmatory test of a hypothesis fixed before any data.
+- **Models: 6 in PREREG-DUO, 8 here.** grok-4.7 and kimi-k3.1-pro were added in ADDENDUM-1 (point 14), before any result under that addendum.
+- **The pooled Fisher tests treat the 781 episodes as independent. They are not.** 22 of the 23 overspends are one model (mistral-small-2603; the other is command-a-plus), so p=2.2e-5 (channel vs no channel) and p=0.0096 (offline vs costly) are, in effect, statements about that one model across 25 seeds x 4 conditions (within Mistral: 20 with a channel vs 2 without). They do not show a channel effect across models: six of the eight models never overspent in any condition.
+- Recall of 11/11 has the same shape: 10 of the 11 joint-only episodes are Mistral.
+
 ## Pilot and discarded data (not in the analysis above)
 - `runs-pilot/` holds Mistral, 100 episodes, under the original prereg. 27 were excluded, all because of HTTP 429. Joint-only 5, combined-logs judge 5/5, per-agent 1/5. Run `table.py runs-pilot`.
 - `runs-truncated/` holds the ADDENDUM-1 legs that hit the max_tokens=1500 reasoning truncation (finish_reason=length, empty content): command-a 59/100 unparseable, deepseek 38/92, qwen 55/68, kimi 3/4 (dropped at the admission gate).
