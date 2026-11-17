@@ -1,5 +1,6 @@
+c34a6b4eb46428449b563a65cf1b58bd245216370d7fcee83de12e35c4a29cdb  ./APPENDIX-DENOMINATOR.md
 7fda1d1e1b5bdcb7451f25e188b19b45831939bd24d698177e372bf7bce4e66c  ./BUNDLE-README.md
-cadacf095f71a7ba5a5321fda553afb633182901e3e29a99d92d36035f650a60  ./README.md
+0f29c213c6c35d4b5ef797ca621a116b8e0d647fc37a01184f45d6d74184d9c2  ./README.md
 206e69035e885e68aa8c45bb9d2c96b2bffaee4a125341489b1a00aeca9bdd75  ./code/.gitignore
 a4765249482271719da1ef243ec851250346fc941d9e61a3dcad05c8793ce607  ./code/README.md
 174bb5e459ebb9b2913548496abb1310fe32413eace99a3f19bc236c8fdc696b  ./code/limit_probe/__init__.py
@@ -66,7 +67,7 @@ e01235ed5476c09889fa24289c6778b9f8d7d51bee895e603253d3255ab95274  ./crossfamily-
 01a4f029693689fc6289b18b7722434270c4cd0a9fc311bf3eb9454f34fbe68f  ./crossfamily-prereg/limit-probe-xfam/tests/test_stats.py
 fdfacd4e3460467db6a1486264ea8f91c26cb01a6137d4d6772486b92a4e9c2e  ./crossfamily/EXCLUDED-TGZ-SHA256.txt
 60e9d8093602c5d247c5a698e2576827cccbaa762fa9297f51a4d0a60b897fb3  ./crossfamily/FRONTIER-TIER.md
-ccd9ddc52b9d8278c36f8a3e39f848be67b040cc22b687886ed1f88aa488b4e7  ./crossfamily/LLMJUDGE.md
+bb1efaca07d7174cd5d8f3158394869c9423c2cef67f6cf54b7715b3796f611d  ./crossfamily/LLMJUDGE.md
 a4998c92bd68b56eb4c1769c4be38788fc68a7d5beaf59cdbe112630ac59967a  ./crossfamily/driver/brief.sh
 af74ef269a9cc28a13cd4c1efcbd2fd9b818b220ecb30a0962965a7054c0b4d2  ./crossfamily/driver/drive.py
 d065e8e8578834cee32da4d8f4a8b8c6c5f55a5d031fa74c25382faa28b34e9c  ./crossfamily/driver/drive2.py
@@ -651,11 +652,11 @@ e18e1abb49fece9db3d8efd4af3189cf84fa60cea870fa616ab2bd1eed9b5c8b  ./crossfamily/
 9aa77bc51b70b783692af813fde3b64a7631729e8fe0942f8ab6e59db11f1f0a  ./crossfamily/runs/smoke/smoke-amend2.json
 23b251ad07335957955781fdc4087a2de03dfac68c041ca7e38c842f8f06d534  ./crossfamily/runs/smoke/smoke.json
 fbf23787f307bd7b784f23e9e7d9e7d1f9d5a6e47ca4501d7acccbfe322cb0a3  ./duo/ADDENDUM-1-ERRATUM.md
-c239435b2cd640bcc424b6b483841c30762372c766087187eecc9485f4061ea9  ./duo/DUO-RESULTS.md
+0829c184db5b7eaea132dcf3122c67ba0e2ac2818955b28453c4cd704631d41f  ./duo/DUO-RESULTS.md
 bd90e6fe12dbc02f4ec29dfffcbb93f26dc935ccfb91f04ec4835bf96c5f3461  ./duo/PREREG-DUO-ADDENDUM-1.md
 26b06e1f7bfa1553745676707105643a1aae37b5d4f3690fd2a3f197efd579c5  ./duo/PREREG-DUO-ADDENDUM-2.md
 bcd88b3562e14bb053e3f263d27511a8d6d1e8fb8dac765a44bc0a52033719cf  ./duo/PREREG-DUO.md
-aa37b9a1f38e6350dd1d021e76f2e9c5b8521510afc54085aa0c194db545abd5  ./duo/README.md
+8d5498dc5baf89874c721f4cce2decadb5df38b5f6c4c5b11db049317f850cce  ./duo/README.md
 8238a6f02150009a29809c8197a556d4e3a323f6600e5e6882a462531a52b2b0  ./duo/SEAL-ADDENDUM-1.sha256
 d4eba88aac5c27b15fa9a3849573e0b84c93092daa37e92b1a145ad43fdba0a4  ./duo/SEAL-ADDENDUM-2.sha256
 7390c44e6410ac1f4cb7cd61a86e343bcbe1462e3709f8f8a9636030ab2e0707  ./duo/SEAL.sha256
@@ -664,7 +665,7 @@ f966bb25cb2df2a48af7f10889890d8298e3d18c442ef08db0f87dd87056c98c  ./duo/driver/d
 4a6283bc58f85ba12f394a4989448d428548fdafe91b51abbfc37a2bcfb9df3f  ./duo/driver/orkey.py
 c191540ce1f1ed549295e2e8408e1a66e249d20d124bdf0b497d10839a9ed00d  ./duo/driver/table.py
 54707422441f366ec5b2d2c5eca57fd52fba1877a6acff91535fba4f3081e8b9  ./duo/probe/fr.py
-ede53d6bda470534475e30217c74efd4093c6a8b35a323cfe6f200f0c0ad67e6  ./duo/probe/fr2.py
+517c594d41516a5e3c8709f81eb54f5f9d112cd40d84d8da4f5b0fd987c3f491  ./duo/probe/fr2.py
 1d1c52481576d568ebdf07a39d7cdaecdc22ada870249ab2e94125e118ec5e46  ./duo/reviews/ask.py
 3493e7b589b832665ab477a2e8f34833ca684ba74f4bbfa5a4e89e5ce4e9f012  ./duo/reviews/google_gemini-3.1-pro-preview.md
 586dda0e1ea37373190b561711806c01a1e9f263100cda86f4a0e00d06065ea6  ./duo/reviews/openai_gpt-6-sol.md

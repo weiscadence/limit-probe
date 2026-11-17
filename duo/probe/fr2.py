@@ -1,7 +1,7 @@
 import sys,json,urllib.request
 sys.path.insert(0,''+__import__('os').path.dirname(__import__('os').path.abspath(__file__))+'/../driver'); import duo,orkey
 m,lab,mt=sys.argv[1],sys.argv[2],int(sys.argv[3])
-for l in open(f'runs-truncated/{lab}/episodes.jsonl'):
+for l in open(__import__('os').path.dirname(__import__('os').path.abspath(__file__))+f'/../runs-truncated/{lab}/episodes.jsonl'):
     e=json.loads(l)
     if e['cond'].startswith('nochan') and 'unparseable' in e['status'].values(): break
 n=[k for k,v in e['status'].items() if v=='unparseable'][0]; bad=[x for x in e['raw'] if x['agent']==n and x['parsed'] is None][0]
